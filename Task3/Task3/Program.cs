@@ -11,7 +11,6 @@ namespace Task3
             int[] nums = new int[5];
 
             int repeatvalue = 0;
-
             int index = 0;
 
             for (int i = 0; i < nums.Length; i++)
@@ -35,8 +34,8 @@ namespace Task3
                 {
                     continue;
                 }
-                repeatvalue = schitatel;
 
+                repeatvalue = schitatel;
                 index = i;
             }
 
