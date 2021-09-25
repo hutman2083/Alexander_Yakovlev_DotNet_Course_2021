@@ -16,7 +16,6 @@ namespace Task1
             {
                 Console.WriteLine("преобразована в целое число " + Secondvalue);
             }
-
             else
             {
                 Console.WriteLine("" + Firstvalue + " нельзя преобразовать в целое число");
