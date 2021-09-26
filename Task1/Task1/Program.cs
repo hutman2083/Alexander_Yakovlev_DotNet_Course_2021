@@ -8,17 +8,17 @@ namespace Task1
         {
             Console.WriteLine("Введите любое значение: ");
 
-            string Firstvalue = Console.ReadLine();
+            string firstValue = Console.ReadLine();
 
-            bool Secondvalue = Int32.TryParse(Firstvalue, out int SecondValue);
+            bool isConverts = Int32.TryParse(firstValue, out int secondValue);
 
-            if (Secondvalue)
+            if (isConverts)
             {
-                Console.WriteLine("преобразована в целое число " + Secondvalue);
+                Console.WriteLine("преобразована в целое число " + secondValue);
             }
             else
             {
-                Console.WriteLine("" + Firstvalue + " нельзя преобразовать в целое число");
+                Console.WriteLine("" + firstValue + " нельзя преобразовать в целое число");
             }
         }   
     }
