@@ -4,28 +4,9 @@ namespace Task4
 {
     class Program
     {
-        static void Insert(ref int[] nums, int value, int index)
-        {
-            int[] newnums = new int[nums.Length + 1];
-
-            newnums[index] = value;
-
-            for (int i = 0; i < index; i++)
-            {
-                newnums[i] = nums[i];
-            }
-
-            for (int i = index; i < nums.Length; i++)
-            {
-                newnums[i + 1] = nums[i];
-            }
-
-            nums = newnums;
-        }
-
         static void Main(string[] args)
         {
-            Console.Write("Введите число ячеек и элементов в массиве:");
+            Console.Write("Введите число ячеек и элементов в массиве:\n");
 
             int n = int.Parse(Console.ReadLine());
 
@@ -41,10 +22,7 @@ namespace Task4
                 Console.Write(nums[i] + " ");
             }
 
-            Console.WriteLine();
-
-            Console.WriteLine("Введите элемент для добавления в массив:");
-            Console.WriteLine("Введите позицию в которую хотите добавить элемент");
+            Console.WriteLine("\nВведите элемент и позицию для добавления в массив :");
 
             int element = int.Parse(Console.ReadLine());
             int position = int.Parse(Console.ReadLine());
@@ -58,7 +36,24 @@ namespace Task4
                 Console.Write(nums[i] + " ");
             }
 
-            Console.WriteLine();
+        }
+        static void Insert(ref int[] nums, int value, int index)
+        {
+            int[] resultNums = new int[nums.Length + 1];
+
+            resultNums[index] = value;
+
+            for (int i = 0; i < index; i++)
+            {
+                resultNums[i] = nums[i];
+            }
+
+            for (int i = index; i < nums.Length; i++)
+            {
+                resultNums[i + 1] = nums[i];
+            }
+
+            nums = resultNums;
         }
     }
 }
