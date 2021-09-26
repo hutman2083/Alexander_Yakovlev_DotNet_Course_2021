@@ -8,76 +8,76 @@ namespace Task2
         {
             Console.Write("Введите 3 числа\n");
 
-            double Firstvalue = Convert.ToDouble(Console.ReadLine());
-            double Secondvalue = Convert.ToDouble(Console.ReadLine());
-            double Thirdvalue = Convert.ToDouble(Console.ReadLine());
+            double firstValue = Convert.ToDouble(Console.ReadLine());
+            double secondValue = Convert.ToDouble(Console.ReadLine());
+            double thirdValue = Convert.ToDouble(Console.ReadLine());
 
-            if (Firstvalue < Secondvalue && Firstvalue < Thirdvalue)
+            if (firstValue < secondValue && firstValue < thirdValue)
             {
-                Console.WriteLine("Минимальное значение = " + Firstvalue);
+                Console.WriteLine("Минимальное значение = " + firstValue);
             }
-            else if (Secondvalue < Firstvalue && Secondvalue < Thirdvalue)
+            else if (secondValue < firstValue && secondValue < thirdValue)
             {
-                Console.WriteLine("Минимальное значение = " + Secondvalue);
+                Console.WriteLine("Минимальное значение = " + secondValue);
             }
             else
             {
-                Console.WriteLine("Минимальное значение = " + Thirdvalue);
+                Console.WriteLine("Минимальное значение = " + thirdValue);
             }
 
-            if (Firstvalue > Secondvalue && Firstvalue > Thirdvalue)
+            if (firstValue > secondValue && firstValue > thirdValue)
             {
-                Console.WriteLine("Максимальное значение = " + Firstvalue);
+                Console.WriteLine("Максимальное значение = " + firstValue);
             }
-            else if (Secondvalue > Firstvalue && Secondvalue > Thirdvalue)
+            else if (secondValue > firstValue && secondValue > thirdValue)
             {
-                Console.WriteLine("Максимальное значение = " + Secondvalue);
+                Console.WriteLine("Максимальное значение = " + secondValue);
             }
             else
             {
-                Console.WriteLine("Максимальное значение = " + Thirdvalue);
+                Console.WriteLine("Максимальное значение = " + thirdValue);
             }
 
             Console.Write("В порядке возрастания:\n");
 
-            if (Firstvalue < Secondvalue && Firstvalue < Thirdvalue)
+            if (firstValue < secondValue && firstValue < thirdValue)
             {
-                Console.WriteLine(Firstvalue);
-                Console.WriteLine(Math.Min(Secondvalue, Thirdvalue));
-                Console.WriteLine(Math.Max(Secondvalue, Thirdvalue));
+                Console.WriteLine(firstValue);
+                Console.WriteLine(Math.Min(secondValue, thirdValue));
+                Console.WriteLine(Math.Max(secondValue, thirdValue));
             }
-            else if (Secondvalue < Firstvalue && Secondvalue < Thirdvalue)
+            else if (secondValue < firstValue && secondValue < thirdValue)
             {
-                Console.WriteLine(Secondvalue);
-                Console.WriteLine(Math.Min(Firstvalue, Thirdvalue));
-                Console.WriteLine(Math.Max(Firstvalue, Thirdvalue));
+                Console.WriteLine(secondValue);
+                Console.WriteLine(Math.Min(firstValue, thirdValue));
+                Console.WriteLine(Math.Max(firstValue, thirdValue));
             }
             else
             {
-                Console.WriteLine(Thirdvalue);
-                Console.WriteLine(Math.Min(Firstvalue, Secondvalue));
-                Console.WriteLine(Math.Max(Firstvalue, Secondvalue));
+                Console.WriteLine(thirdValue);
+                Console.WriteLine(Math.Min(firstValue, secondValue));
+                Console.WriteLine(Math.Max(firstValue, secondValue));
             }
 
             Console.Write("В порядке убывания:\n");
 
-            if (Firstvalue > Secondvalue && Firstvalue > Thirdvalue)
+            if (firstValue > secondValue && firstValue > thirdValue)
             {
-                Console.WriteLine(Firstvalue);
-                Console.WriteLine(Math.Min(Secondvalue, Thirdvalue));
-                Console.WriteLine(Math.Max(Secondvalue, Thirdvalue));
+                Console.WriteLine(firstValue);
+                Console.WriteLine(Math.Max(secondValue, thirdValue));
+                Console.WriteLine(Math.Min(secondValue, thirdValue));
             }
-            else if (Secondvalue > Firstvalue && Secondvalue > Thirdvalue)
+            else if (secondValue > firstValue && secondValue > thirdValue)
             {
-                Console.WriteLine(Secondvalue);
-                Console.WriteLine(Math.Min(Firstvalue, Thirdvalue));
-                Console.WriteLine(Math.Max(Firstvalue, Thirdvalue));
+                Console.WriteLine(secondValue);
+                Console.WriteLine(Math.Max(firstValue, thirdValue));
+                Console.WriteLine(Math.Min(firstValue, thirdValue));
             }
             else
             {
-                Console.WriteLine(Thirdvalue);
-                Console.WriteLine(Math.Min(Firstvalue, Secondvalue));
-                Console.WriteLine(Math.Max(Firstvalue, Secondvalue));
+                Console.WriteLine(thirdValue);
+                Console.WriteLine(Math.Max(firstValue, secondValue));
+                Console.WriteLine(Math.Min(firstValue, secondValue));
             }
 
             Console.ReadKey();
