@@ -10,7 +10,7 @@ namespace Task3
 
             int[] nums = new int[5];
 
-            int repeatvalue = 0;
+            int value = 0;
             int index = 0;
 
             for (int i = 0; i < nums.Length; i++)
@@ -20,26 +20,26 @@ namespace Task3
 
             for (int i = 0; i < nums.Length; i++)
             {
-                int schitatel = 1;
+                int count = 1;
 
                 for (int j = i + 1; j < nums.Length; j++)
                 {
                     if (nums[i] == nums[j])
                     {
-                        schitatel++;
+                        count++;
                     }
                 }
 
-                if (schitatel <= repeatvalue)
+                if (count <= value)
                 {
                     continue;
                 }
 
-                repeatvalue = schitatel;
+                value = count;
                 index = i;
             }
 
-            Console.WriteLine($"Число {nums[index]} встречается чаще всего {repeatvalue} раз(а)");
+            Console.WriteLine($"Число {nums[index]} встречается чаще всего {value} раз(а)");
         }
     }
 }
