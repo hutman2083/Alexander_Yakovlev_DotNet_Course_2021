@@ -6,7 +6,7 @@ namespace Task3
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите число элементов в массиве\n");
+            Console.Write("Введите числа в массив\n");
 
             int[] nums = new int[5];
 
