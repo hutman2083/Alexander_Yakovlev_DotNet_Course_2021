@@ -8,9 +8,9 @@ namespace Task4
         {
             Console.Write("Введите число ячеек и элементов в массиве:\n");
 
-            int n = int.Parse(Console.ReadLine());
+            int countElements = int.Parse(Console.ReadLine());
 
-            int[] nums = new int[n];
+            int[] nums = new int[countElements];
 
             for (int i = 0; i < nums.Length - 1; i++)
             {
