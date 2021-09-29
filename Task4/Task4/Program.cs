@@ -22,7 +22,7 @@ namespace Task4
                 Console.Write(nums[i] + " ");
             }
 
-            Console.WriteLine("\nВведите элемент и позицию для добавления в массив :");
+            Console.WriteLine("\nВведите элемент и позицию для добавления в массив:");
 
             int element = int.Parse(Console.ReadLine());
             int position = int.Parse(Console.ReadLine());
