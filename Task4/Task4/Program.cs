@@ -6,7 +6,7 @@ namespace Task4
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите число ячеек и элементов в массиве:\n");
+            Console.Write("Введите число ячеек и элементов в массиве:\n");//опщшывошщаошщывомшыовшомшыошаоыаш
 
             int countElements = int.Parse(Console.ReadLine());
 
